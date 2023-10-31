@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+}
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+input#tarefa{
+    height: 120px;
+    font-size: 2em;
+    width: 80%;
+    padding-left: 10%;
+}
+input.add{
+    width: 20%;
+    height: 120px;
+    cursor:pointer;
+    background: green;
+    color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+    border: none;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px;
+}
+main{
+    display: flex;
+    margin: auto auto;
+    flex-flow: row wrap;
+    width: 90%;
+    padding-top: 40px;
+    /* border: 1px solid blue; */
+}
+.item{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px grey;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+.item.clicado{
+    background: rgb(194, 255, 194);
+}
+.item.clicado .item-nome{
+    text-decoration: line-through;
+    color: lightgrey;
+}
+.item-icone{
+    flex: 20%;
+    /* border: 1px solid orange; */
+    text-align: center;
+    font-size: 2em;
+}
+.item-nome{
+    flex: 55%;
+    /* border: 1px solid pink; */
+    
+    font-size: 20px;
+    font-weight: bold;
+}
+.item-botao{
+    flex: 25%;
+    /* border: 1px solid green; */
+    
+}
+.delete{
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+#checked{
+    color: green;
+    font-weight: bolder;
+}
+
